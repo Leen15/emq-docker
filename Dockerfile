@@ -15,6 +15,7 @@ RUN set -ex \
         iputils \
         bash \
         sudo \
+        curl \
         bsd-compat-headers \
         perl \
         erlang \
