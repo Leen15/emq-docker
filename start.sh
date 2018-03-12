@@ -12,7 +12,7 @@ fi
 LOCAL_IP=$(hostname -i |grep -E -oh '((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])'|head -n 1)
 
 if [[ ! -z "$RESOLVE_RANCHER_IP" ]]; then
-    LOCAL_IP=$( curl -s --proxy '' 'http://rancher-metadata/latest/self/container/primary_ip' )
+    LOCAL_IP=$( curl -s --proxy '' 'http://169.254.169.250/latest/self/container/primary_ip' )
 fi
 
 ## EMQ Base settings and plugins setting
