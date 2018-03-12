@@ -12,7 +12,7 @@ RUN set -ex \
         build-base \
         # gcc \
         # make \
-        iputils-ping \
+        iputils \
         bash \
         sudo \
         bsd-compat-headers \
