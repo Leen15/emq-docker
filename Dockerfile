@@ -12,6 +12,9 @@ RUN set -ex \
         build-base \
         # gcc \
         # make \
+        iputils-ping \
+        bash \
+        sudo \
         bsd-compat-headers \
         perl \
         erlang \
