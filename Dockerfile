@@ -6,12 +6,17 @@ ENV EMQ_VERSION=v2.3.5
 
 COPY ./start.sh /start.sh
 
+RUN apk add --no-cache curl
+
 RUN set -ex \
     # add build deps, remove after build
     && apk --no-cache add --virtual .build-deps \
         build-base \
         # gcc \
         # make \
+        iputils \
+        bash \
+        sudo \
         bsd-compat-headers \
         perl \
         erlang \
