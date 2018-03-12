@@ -1,3 +1,5 @@
+### N.B. This is a fork of emq-docker repo where I added curl package and a new env RESOLVE_RANCHER_IP that (if set) allow to read the local ip of the container from rancher.
+
 # EMQ Docker
 
 *EMQ* (Erlang MQTT Broker) is a distributed, massively scalable, highly extensible MQTT message broker written in Erlang/OTP.
